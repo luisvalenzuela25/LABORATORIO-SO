@@ -20,6 +20,8 @@ mv config.cfg ../
 # Eliminé datos2.txt
 rm datos2.txt
 ```
+![prueba](https://github.com/luisvalenzuela25/LABORATORIO-SO/blob/main/imagen_so_lab/4.png?raw=true)
+
 📝 Ejercicio 2: Registros y Edición de Archivos
 ```bash
 
@@ -37,6 +39,9 @@ tail -n 3 registro.log
 # Verifiqué el contenido completo
 cat registro.log
 ```
+![prueba](https://github.com/luisvalenzuela25/LABORATORIO-SO/blob/main/imagen_so_lab/1.png?raw=true)
+![prueba](https://github.com/luisvalenzuela25/LABORATORIO-SO/blob/main/imagen_so_lab/2.png?raw=true)
+
  Parte II: Comandos Intermedios
 Ejercicio 3: Búsqueda y Procesamiento de Archivos
 ```bash
@@ -58,6 +63,9 @@ awk '{for(i=1;i<=NF;i++) if ($i % 5 == 0) print $i}' numeros.txt | wc -l
 # Ordenar números de mayor a menor
 sort -nr numeros.txt > numeros_ordenados.txt
 ```
+![prueba](https://github.com/luisvalenzuela25/LABORATORIO-SO/blob/main/imagen_so_lab/3.png?raw=true)
+![prueba](https://github.com/luisvalenzuela25/LABORATORIO-SO/blob/main/imagen_so_lab/5.png?raw=true)
+
 🧵 Ejercicio 4: Redirección y Tuberías
 ```bash
 # Guardar lista de procesos
@@ -72,6 +80,10 @@ ps aux --sort=-%mem | head -n 6 > top_procesos.txt
 # Contar archivos en /laboratorio
 find laboratorio -type f | wc -l
 ```
+![prueba](https://github.com/luisvalenzuela25/LABORATORIO-SO/blob/main/imagen_so_lab/7.png?raw=true)
+![prueba](https://github.com/luisvalenzuela25/LABORATORIO-SO/blob/main/imagen_so_lab/8.png?raw=true)
+![prueba](https://github.com/luisvalenzuela25/LABORATORIO-SO/blob/main/imagen_so_lab/9.png?raw=true)
+
 🔐 Parte III: Comandos Avanzados
 🛡️ Ejercicio 5: Permisos y Usuarios
 ```bash
@@ -85,6 +97,9 @@ mkdir compartido
 chmod 755 compartido
 
 ```
+![prueba](https://github.com/luisvalenzuela25/LABORATORIO-SO/blob/main/imagen_so_lab/13.png?raw=true)
+![prueba](https://github.com/luisvalenzuela25/LABORATORIO-SO/blob/main/imagen_so_lab/14.png?raw=true)
+
 📊 Ejercicio 6: Monitoreo de Procesos
 ```bash
 # Ejecutar ping en segundo plano
@@ -99,6 +114,9 @@ ping google.com > ping_log.txt &
 kill PID
 📎 Evidencia: Archivo ping_log.txt y captura del uso de top.
 ```
+![prueba]()
+![prueba](https://github.com/luisvalenzuela25/LABORATORIO-SO/blob/main/imagen_so_lab/15.png?raw=true)
+
 💾 Ejercicio 7: Script de Respaldo
 Archivo: backup.sh
 
@@ -115,6 +133,9 @@ Probado con varios directorios.
 Genera nombres únicos basados en la fecha y hora.
 
 ```
+![prueba]()
+![prueba](https://github.com/luisvalenzuela25/LABORATORIO-SO/blob/main/imagen_so_lab/16.png?raw=true)
+
 🧠 Ejercicio 8: Reto Final - Análisis de Logs
 Archivo: analisis_logs.sh
 
@@ -148,3 +169,6 @@ echo "## Últimos errores en: $mayor_archivo" >> ~/laboratorio/datos/salida/info
 grep -i "error" "$mayor_archivo" 2>/dev/null | tail -n 3 >> ~/laboratorio/datos/salida/informe_logs.md
 
 echo "✅ Análisis completado. Informe guardado en ~/laboratorio/datos/salida/informe_logs.md"
+```
+![prueba](https://github.com/luisvalenzuela25/LABORATORIO-SO/blob/main/imagen_so_lab/17.png?raw=true)
+![prueba](https://github.com/luisvalenzuela25/LABORATORIO-SO/blob/main/imagen_so_lab/18.png?raw=true)
